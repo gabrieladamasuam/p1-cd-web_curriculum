@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Currículum — Eva Blázquez y Gabriela Damas</title>
+  <meta name="description" content="Currículum de Eva Blázquez y Gabriela Damas, estudiantes de Ciencia e Ingeniería de Datos">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="hero block" role="banner">
+      <div class="logo" aria-hidden="true">
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7829058/logotipo-escuela-politecnica-superior-uam-clipart-md.png" alt="Escuela Politécnica Superior, UAM" width="200" height="100"/>
+      </div>
+
+    <div class="intro">
+      <h1>Eva Blázquez &amp; Gabriela Damas</h1>
+      <p class="role">Estudiantes de 3º año en el Grado de Ciencia e Ingeniería de Datos</p>
+
+      <ul class="contact" aria-label="Contacto">
+        <li>
+          <a href="mailto:eva.blazquez@estudiante.uam.es">eva.blazquez@estudiante.uam.es</a>
+          <span class="sep" aria-hidden="true">|</span>
+          <a href="mailto:gabriela.damas@estudiante.uam.es">gabriela.damas@estudiante.uam.es</a>
+        </li>
+      </ul>
+
+      <!-- Acciones eliminadas: modo oscuro -->
+    </div>
+  </header>
+
+  <main class="block" role="main">
+    <section id="about">
+      <h2>Sobre nosotras</h2>
+      <p>Somos estudiantes del grado en Ciencia e Ingeniería de Datos con interés en desarrollo web, sistemas distribuidos y prácticas de programación. En este sitio se muestran proyectos realizados y habilidades técnicas.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <ul class="skills-list">
+        <li data-level="95">Python</li>
+        <li data-level="90">Java</li>
+        <li data-level="85">SQL</li>
+        <li data-level="85">MongoDB</li>
+        <li data-level="80">R</li>
+        <li data-level="70">MATLAB</li>
+        <li data-level="30">HTML</li>
+        <li data-level="30">CSS</li>
+        <li data-level="30">JavaScript</li>
+        <li data-level="15">Haskell</li>
+        <li data-level="10">Prolog</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos</h2>
+
+      <div class="filters" role="tablist" aria-label="Filtrar proyectos">
+        <button data-filter="all" class="active" role="tab" aria-selected="true">Todos</button>
+        <button data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button data-filter="js" role="tab" aria-selected="false">JavaScript</button>
+        <button data-filter="otros" role="tab" aria-selected="false">Otros</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Web de ejemplo: etiqueta solamente "web" -->
+        <article class="project" data-tags="web">
+          <h3>Web de ejemplo</h3>
+          <p>Plantilla web con HTML5, CSS3 y JS para interacción básica.</p>
+          <a href="#" target="_blank" rel="noopener">Código / Demo</a>
+        </article>
+
+        <!-- Práctica JS - DOM: exclusivamente "js" -->
+        <article class="project" data-tags="js">
+          <h3>Práctica JS - DOM</h3>
+          <p>Manipulación del DOM para añadir / eliminar elementos, eventos y validación.</p>
+        </article>
+
+        <!-- Simulación distribuida: "otros" -->
+        <article class="project" data-tags="otros">
+          <h3>Simulación distribuida</h3>
+          <p>Trabajo de Computación Distribuida: simulador de paso de mensajes (resumen y resultados).</p>
+        </article>
+
+        <!-- Nuevo: Todo sobre IPFS (sitio que facilitaste) -->
+        <article class="project" data-tags="otros">
+          <h3>Todo sobre IPFS</h3>
+          <p>Web realizada el año pasado sobre IPFS: conceptos, ejemplos y práctica.</p>
+          <a href="https://sites.google.com/view/todo-sobre-ipfs/p%C3%A1gina-principal" target="_blank" rel="noopener">Visitar web</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="block" role="contentinfo">
+    <p>© 2025 — Eva Blázquez y Gabriela Damas. Práctica 1 de Computación Distribuida.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
