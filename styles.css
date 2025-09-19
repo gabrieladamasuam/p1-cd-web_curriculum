@@ -52,7 +52,7 @@ html, body {
 }
 .contact a {
   text-decoration: none;
-  color: #2b7a78;
+  color: rgb(2, 133, 200);
   margin: 0 0.4rem;
   font-weight: 500;
 }
@@ -61,8 +61,6 @@ html, body {
   color: #cfcfcf; 
   margin: 0 0.4rem; 
 }
-
-
 
 /* MAIN / SECTIONS */
 main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
@@ -119,7 +117,6 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px r
 
 /* Footer */
 footer{font-size:.85rem;color:#666666;text-align:center;padding:.75rem 0;margin-bottom:1rem}
-
 
 
 /* Responsive tweaks */
