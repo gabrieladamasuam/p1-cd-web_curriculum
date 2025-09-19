@@ -23,8 +23,8 @@ html, body {
 
 /* Encabezados h2 */
 .section-title {
-  background-color: rgb(0, 0, 139);
-  color: rgb(173, 216, 230); 
+  background-color: #3A83BE;
+  color: white; 
   padding: 5px;
 }
 
@@ -34,44 +34,59 @@ html, body {
   gap:1rem;
   align-items:center;
   padding:1.25rem;
-  background: linear-gradient(90deg, #e8f6f5, white);
+  background: #3a83bebb; /* azul con 85% opacidad */
+  backdrop-filter: blur(6px); /* efecto vidrio */
+  color: white;
   border-radius:8px;
   margin-top:1rem;
 }
 .logo{flex:0 0 96px}
-.intro h1{margin:0 0 .25rem 0;font-size:1.6rem}
-.role{margin:0;color: #666666;}
+.intro h1{margin:0 0 .25rem 0;font-size:2.0rem}
+.role{margin:0;font-size: 1.2rem; color: #c8c8c8;}
 
 /* Contact emails estilizados */
+.contact a {
+  font-size: 1.2rem;
+  color: #df7f20;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
 
+.contact a:hover {
+  color: #F7DC4A;
+  text-decoration: underline;
+}
 
-
+.contact li {
+  margin-bottom: 0.5rem;
+}
 
 /* MAIN / SECTIONS */
 main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
-section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #0000000f}
 #skills .skills-list{
   padding-left: 1.2rem;
   margin:0;
   list-style:disc;
 }
+
 #skills li{
   margin-bottom:0.4rem;
   color: #222222;
 }
-/* esto es lo de las barras de las habilidades */
 
 /* Projects */
 .filters{display:flex;gap:0.5rem;margin-bottom:0.75rem}
 .filters button{
   padding:0.35rem 0.5rem;
   border-radius:6px;
-  border:1px solid rgba(0,0,0,.06);
+  border:1px solid #0000000f;
   background:#fff;
   cursor:pointer;
 }
 .filters button.active{
-  background: #2b7a78;
+  background: #3A83BE;
   color:#fff;
   border-color:transparent;
 }
@@ -81,11 +96,11 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px r
   padding:0.75rem;
   border-radius:6px;
   background:linear-gradient(180deg,#fff,#fbfbfb);
-  border:1px solid rgba(0,0,0,.03);
+  border:1px solid #00000008;
   color:#222222;
 }
 .project h3{margin:0 0 .35rem 0}
-.project a{font-size:0.9rem;color:#2b7a78}
+.project a{font-size:0.9rem;color:#3A83BE}
 
 /* Footer */
 footer{font-size:.85rem;color:#666666;text-align:center;padding:.75rem 0;margin-bottom:1rem}
