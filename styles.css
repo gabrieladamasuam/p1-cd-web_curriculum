@@ -43,25 +43,6 @@ html, body {
 .role{margin:0;color: #666666;}
 
 /* Contact emails estilizados */
-#contact p {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-#contact .contact {
-  list-style: none; 
-  padding-left: 0;  
-  margin: 0;
-}
-
-#contact .contact a {
-  text-decoration: none;
-  color: #2b7a78;
-}
-
-#contact .contact a:hover {
-  text-decoration: underline;
-}
 
 
 
@@ -79,17 +60,6 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px r
   color: #222222;
 }
 /* esto es lo de las barras de las habilidades */
-#skills li::after{
-  content:'';
-  position:absolute;
-  left:0;
-  bottom:0;
-  height:6px;
-  border-radius:0 0 6px 6px;
-  background: linear-gradient(90deg, #2b7a78, #4aa3a0);
-  width: calc(0%);
-  transition: width .6s ease;
-}
 
 /* Projects */
 .filters{display:flex;gap:0.5rem;margin-bottom:0.75rem}
