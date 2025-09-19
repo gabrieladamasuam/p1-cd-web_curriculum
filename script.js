@@ -28,12 +28,31 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inicializar barras de habilidad con el data-level (usando variable CSS --level)
   document.querySelectorAll('#skills li').forEach(li => {
     const level = Math.max(0, Math.min(100, parseInt(li.dataset.level || '0', 10)));
-    // establecer la variable CSS usada por ::after
-    li.style.setProperty('--level', `${level}%`);
+    
+    // Crear la barra de progreso si no existe
+    let bar = li.querySelector('.bar');
+    if (!bar) {
+      bar = document.createElement('div');
+      bar.className = 'bar';
+      bar.style.height = '6px';
+      bar.style.borderRadius = '0 0 6px 6px';
+      bar.style.background = 'linear-gradient(90deg, #2b7a78, #4aa3a0)';
+      bar.style.position = 'absolute';
+      bar.style.left = '0';
+      bar.style.bottom = '0';
+      bar.style.transition = 'width 0.6s ease';
+      li.appendChild(bar);
+      li.style.position = 'relative'; // asegurar que la barra se posicione bien
+    }
+
+    // Establecer el ancho directamente
+    bar.style.width = `${level}%`;
+
     // accesibilidad: añadir aria-valuenow como referencia
     li.setAttribute('role', 'progressbar');
     li.setAttribute('aria-valuemin', '0');
     li.setAttribute('aria-valuemax', '100');
     li.setAttribute('aria-valuenow', String(level));
   });
+
 });
