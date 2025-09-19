@@ -9,6 +9,10 @@ html, body {
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   color: #222222;
   background-color: #f7f7f9;
+  background-image: url('https://www.uam.es/uam/media/img/1606932565641/quieroseringeniera-05.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .block {
@@ -18,9 +22,11 @@ html, body {
 }
 
 /* Encabezados h2 */
+h2 {
+  color: #916427;
+}
 .section-title {
-  background-color: #e8f6f5;
-  color: #0285c8; 
+  color: #916427;
   padding: 5px;
 }
 
@@ -30,13 +36,13 @@ html, body {
   gap:1rem;
   align-items:center;
   padding:1.25rem;
-  background: linear-gradient(90deg, #e8f6f5, white);
+  background: linear-gradient(90deg, #916427, #f2d3a6);
   border-radius:8px;
   margin-top:1rem;
 }
 .logo{flex:0 0 96px}
 .intro h1{margin:0 0 .25rem 0;font-size:1.6rem}
-.role{margin:0;color: #666666;}
+.role{margin:0;color: #ffffff;}
 
 /* Contact emails estilizados */
 .contact{list-style:none;
@@ -48,11 +54,11 @@ html, body {
   align-items:center;
   gap:0.5rem;
   font-size:.95rem;
-  color:#222222;
+  color:#916427;
 }
 .contact a {
   text-decoration: none;
-  color: #0285c8;
+  color: #7cb4d1;
   margin: 0 0.4rem;
   font-weight: 500;
 }
@@ -63,30 +69,29 @@ html, body {
 }
 
 /* MAIN / SECTIONS */
-main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
-section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #0000000f}
-#skills .skills-list{display:flex;gap:0.5rem;flex-wrap:wrap;padding:0;list-style:none;margin:0}
-#skills li{
-  flex:1 1 140px;
-  padding:0.5rem;
-  border-radius:6px;
-  background:linear-gradient(180deg,#fafafa,#fff);
-  position:relative;
-  color:#222222;
-  min-width:120px;
-  /*overflow:hidden;-------------- por qué ahora si lo quito no se pone debajo?*/
+main {
+  margin:1rem 0 3rem 0;
+  display:block;
 }
-/* esto es lo de las barras de las habilidades */
-#skills li::after{
-  content:'';
-  position:absolute;
-  left:0;
-  bottom:0;
-  height:6px;
-  border-radius:0 0 6px 6px;
-  background: linear-gradient(90deg, #2b7a78, #4aa3a0);
-  width: calc(0%);
-  transition: width .6s ease;
+section{
+  background:#ffffff;
+  padding:1rem;
+  border-radius:6px;
+  box-shadow:0 1px 3px #0000000f;
+  margin-bottom: 1.5rem;
+}
+#skills .skills-list {
+  list-style: disc inside;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+#skills li {
+  padding: 0.25rem 0;
+  color: #222222;
+  background: none;
+  border-radius: 0;
+  position: static;
+  min-width: 0;
 }
 
 /* Projects */
@@ -99,7 +104,7 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
   cursor:pointer;
 }
 .filters button.active{
-  background: #0285c8;
+  background: #916427;
   color:#fff;
   border-color:transparent;
 }
@@ -113,14 +118,10 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
   color:#222222;
 }
 .project h3{margin:0 0 .35rem 0}
-.project a{font-size:0.9rem;color:#0285c8}
+.project a{font-size:0.9rem;color:#916427}
 
 /* Footer */
 footer{font-size:.85rem;color:#666666;text-align:center;padding:.75rem 0;margin-bottom:1rem}
 
 
 /* Responsive tweaks */
-@media (min-width:760px){
-  main{grid-template-columns:2fr 1fr}
-  #projects{grid-column:1 / -1}
-}
