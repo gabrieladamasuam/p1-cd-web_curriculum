@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero block" role="banner">
-    <div class="logo" aria-hidden="true">
+  <header class="hero block">
+    <div class="logo">
       <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7829058/logotipo-escuela-politecnica-superior-uam-clipart-md.png" alt="Escuela Politécnica Superior, UAM" width="200" height="100">
     </div>
 
     <div class="intro">
       <h1>Eva Blázquez y Gabriela Damas</h1>
       <p class="role">Estudiantes de 3º año en el Grado de Ciencia e Ingeniería de Datos</p>
-      <ul class="contact" aria-label="Contacto">
+      <ul class="contact">
         <li>
           <a href="mailto:eva.blazquezp@estudiante.uam.es">eva.blazquezp@estudiante.uam.es</a>
         </li>
@@ -27,7 +27,7 @@
     </div>
   </header>
 
-  <main class="block" role="main">
+  <main class="block">
     <section id="about">
       <h2 class="section-title">Sobre nosotras</h2>
       <p>Somos estudiantes del Grado en Ciencia e Ingeniería de Datos de la Escuela Politécnica Superior de la UAM, con interés en desarrollo web, sistemas distribuidos y prácticas de programación. En este sitio se muestran proyectos realizados por ambas y las habilidades técnicas que hemos adquirido hasta ahora.</p>
@@ -53,46 +53,46 @@
 
     <section id="projects">
       <h2 class="section-title">Proyectos</h2>
-      <div class="filters" role="tablist" aria-label="Filtrar proyectos">
-        <button data-filter="all" class="active" role="tab" aria-selected="true">Todos</button>
-        <button data-filter="web" role="tab" aria-selected="false">Web</button>
-        <button data-filter="java" role="tab" aria-selected="false">Java</button>
-        <button data-filter="otros" role="tab" aria-selected="false">Otros</button>
+      <div class="filters">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="java">Java</button>
+        <button data-filter="otros">Otros</button>
       </div>
 
       <div class="projects-grid">
-        <!-- CV Website: repositorio GitHub (etiqueta "web") -->
-        <article class="project" data-tags="web">
+        <!-- CV Website: repositorio GitHub (clase "web") -->
+        <article class="project web">
           <h3>Detrás de nuestra Web</h3>
           <p>Repositorio de este mismo currículum web realizado para la asignatura de Computación Distribuida. Incluye HTML, CSS y JavaScript.</p>
-          <a href="https://github.com/gabrieladamasuam/p1-cd-web_curriculum" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+          <a href="https://github.com/gabrieladamasuam/p1-cd-web_curriculum" target="_blank">Ver repositorio en GitHub</a>
         </article>
 
-        <!-- Proyecto Java: arquitecturas software (etiqueta "java") -->
-        <article class="project" data-tags="java">
+        <!-- Proyecto Java -->
+        <article class="project java">
           <h3>Nuestro propio "Vinted"</h3>
           <p>Aplicación de consola en Java que pone en práctica patrones y principios de diseño, desarrollada para la asignatura de Análisis y Diseño de Software.</p>
-          <a href="https://github.com/gabrieladamasuam/p3-adsof-reusa" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+          <a href="https://github.com/gabrieladamasuam/p3-adsof-reusa" target="_blank">Ver repositorio en GitHub</a>
         </article>
 
         <!-- Todo sobre IPFS -->
-        <article class="project" data-tags="otros">
+        <article class="project otros">
           <h3>Todo sobre IPFS</h3>
           <p>Web realizada como proyecto final para la asignatura de Programación III. Incluye conceptos, ejemplos y prácticas sobre IPFS.</p>
-          <a href="https://sites.google.com/view/todo-sobre-ipfs/p%C3%A1gina-principal" target="_blank" rel="noopener">Visitar web</a>
+          <a href="https://sites.google.com/view/todo-sobre-ipfs/p%C3%A1gina-principal" target="_blank">Visitar web</a>
         </article>
 
-        <!-- Simulación de IPFS: "otros" -->
-        <article class="project" data-tags="otros">
+        <!-- Simulación de IPFS -->
+        <article class="project otros">
           <h3>Simulación de IPFS</h3>
           <p>Enlace directo al repositorio de GitHub que simula la red IPFS en Python, como una de las prácticas del proyecto de Programación III.</p>
-          <a href="https://github.com/gabrieladamasuam/ipfs_simulado" target="_blank" rel="noopener">Ver repositorio en GitHub</a>
+          <a href="https://github.com/gabrieladamasuam/ipfs_simulado" target="_blank">Ver repositorio en GitHub</a>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="block" role="contentinfo">
+  <footer class="block">
     <p> &copy; 2025 — Eva Blázquez y Gabriela Damas. Práctica 1 de Computación Distribuida.</p>
   </footer>
 

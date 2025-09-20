@@ -1,21 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Filtros de proyectos (arreglado para manejar espacios y comparación robusta)
+  // Filtros de proyectos (usando classList en lugar de data-*)
   document.querySelectorAll('.filters button').forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active class / aria-selected
+      // Quitar la clase activa de todos los botones
       document.querySelectorAll('.filters button').forEach(b=>{
         b.classList.remove('active');
-        b.setAttribute('aria-selected','false');
       });
+
+      // Activar el botón seleccionado
       btn.classList.add('active');
-      btn.setAttribute('aria-selected','true');
 
       const filter = btn.getAttribute('data-filter');
       document.querySelectorAll('.project').forEach(p => {
-        const raw = p.dataset.tags || '';
-        const tags = raw.split(',').map(t => t.trim()).filter(Boolean);
-        if (filter === 'all' || tags.includes(filter)) {
+        if (filter === 'all' || p.classList.contains(filter)) {
           p.style.display = '';
         } else {
           p.style.display = 'none';
