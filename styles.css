@@ -1,8 +1,3 @@
-/* styles.css - Plantilla responsive para CV */
-/* Basado en buenas prácticas vistas en HTML/CSS (guías iniciales). */
-/* Reset / base */
-/* { box-sizing: border-box; } */
-
 html, body {
   height: 100%;
   margin: 0;
@@ -28,7 +23,7 @@ html, body {
   padding: 5px;
 }
 
-/* HERO / HEADER */
+/* hero = header (cabecera)*/
 .hero{
   display:flex;
   gap:1rem;
@@ -47,7 +42,7 @@ html, body {
   color: #c8c8c8;
 }
 
-/* Contact emails estilizados */
+/* Contact emails */
 .contact a {
   font-size: 1.0rem;
   color: #df7f20;
@@ -55,7 +50,7 @@ html, body {
   font-weight: 500;
 }
 
-.contact a:hover { /* fuente: https://www.w3schools.com/css/css_pseudo_classes.asp */
+.contact a:hover { /* Fuente: https://www.w3schools.com/css/css_pseudo_classes.asp */
   color: #F7DC4A;
   text-decoration: underline;
 }
@@ -68,13 +63,13 @@ html, body {
 .contact li {
   margin-bottom: 0.5rem;
 }
-.contact li::marker { /* fuente: https://www.w3schools.com/css/css_pseudo_elements.asp*/
+.contact li::marker { /* Fuente: https://www.w3schools.com/css/css_pseudo_elements.asp*/
   font-size: 1.0rem;
   color: #F7DC4A;
   content: '\25B6  ';
 }
 
-/* MAIN / SECTIONS */
+/* Secciones */
 main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
 section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #0000000f}
 #skills .skills-list {
