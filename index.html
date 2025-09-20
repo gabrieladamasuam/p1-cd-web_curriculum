@@ -54,35 +54,31 @@
     <section id="projects">
       <h2 class="section-title">Proyectos</h2>
       <div class="filters">
-        <button data-filter="all" class="active">Todos</button>
-        <button data-filter="web">Web</button>
-        <button data-filter="java">Java</button>
-        <button data-filter="otros">Otros</button>
+        <button onclick="filtrar('todos')" class="active">Todos</button>
+        <button onclick="filtrar('web')">Webs</button>
+        <button onclick="filtrar('aplicacion')">Aplicaciones</button>
+        <button onclick="filtrar('otros')">Otros</button>
       </div>
 
       <div class="projects-grid">
-        <!-- CV Website: repositorio GitHub (clase "web") -->
         <article class="project web">
-          <h3>Detrás de nuestra Web</h3>
+          <h3>Detrás de nuestro CV</h3>
           <p>Repositorio de este mismo currículum web realizado para la asignatura de Computación Distribuida. Incluye HTML, CSS y JavaScript.</p>
           <a href="https://github.com/gabrieladamasuam/p1-cd-web_curriculum" target="_blank">Ver repositorio en GitHub</a>
         </article>
 
-        <!-- Proyecto Java -->
-        <article class="project java">
-          <h3>Nuestro propio "Vinted"</h3>
-          <p>Aplicación de consola en Java que pone en práctica patrones y principios de diseño, desarrollada para la asignatura de Análisis y Diseño de Software.</p>
-          <a href="https://github.com/gabrieladamasuam/p3-adsof-reusa" target="_blank">Ver repositorio en GitHub</a>
-        </article>
-
-        <!-- Todo sobre IPFS -->
-        <article class="project otros">
+        <article class="project web">
           <h3>Todo sobre IPFS</h3>
           <p>Web realizada como proyecto final para la asignatura de Programación III. Incluye conceptos, ejemplos y prácticas sobre IPFS.</p>
           <a href="https://sites.google.com/view/todo-sobre-ipfs/p%C3%A1gina-principal" target="_blank">Visitar web</a>
         </article>
 
-        <!-- Simulación de IPFS -->
+        <article class="project aplicacion">
+          <h3>Reusa: Nuestro propio "Vinted"</h3>
+          <p>Aplicación de consola en Java que pone en práctica patrones y principios de diseño, desarrollada para la asignatura de Análisis y Diseño de Software.</p>
+          <a href="https://github.com/gabrieladamasuam/p3-adsof-reusa" target="_blank">Ver repositorio en GitHub</a>
+        </article>
+
         <article class="project otros">
           <h3>Simulación de IPFS</h3>
           <p>Enlace directo al repositorio de GitHub que simula la red IPFS en Python, como una de las prácticas del proyecto de Programación III.</p>
