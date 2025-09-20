@@ -8,7 +8,7 @@ html, body {
   margin: 0;
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   color: #222222;
-  background-color: #f7f7f9;
+  background-color: #3A83BE;
   background-image: url('https://www.uam.es/uam/media/img/1606932565641/quieroseringeniera-05.jpg');
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@ html, body {
   gap:1rem;
   align-items:center;
   padding:1.25rem;
-  background: #3a83bee6; /* azul con 85% opacidad */
+  background: #3a83bee6; /* azul con opacidad */
   color: white;
   border-radius:8px;
   margin-top:1rem;
@@ -53,10 +53,9 @@ html, body {
   color: #df7f20;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
 }
 
-.contact a:hover {
+.contact a:hover { /* fuente: https://www.w3schools.com/css/css_pseudo_classes.asp */
   color: #F7DC4A;
   text-decoration: underline;
 }
@@ -69,8 +68,8 @@ html, body {
 .contact li {
   margin-bottom: 0.5rem;
 }
-.contact li::marker {
-  font-size: 1.0em;
+.contact li::marker { /* fuente: https://www.w3schools.com/css/css_pseudo_elements.asp*/
+  font-size: 1.0rem;
   color: #F7DC4A;
   content: '\25B6  ';
 }
@@ -84,7 +83,7 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
   list-style: disc;
 }
 #skills .skills-list li::marker {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #F7DC4A;
   content: '\25B6  ';
 }
@@ -121,4 +120,4 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
 .project a{font-size:0.9rem;color:#3A83BE}
 
 /* Footer */
-footer{font-size:.85rem;color:#666666;text-align:center;padding:.75rem 0;margin-bottom:1rem}
+footer{font-size:.85rem;color:white;text-align:center;padding:.75rem 0;margin-bottom:1rem}
