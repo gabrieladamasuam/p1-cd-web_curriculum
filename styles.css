@@ -30,7 +30,7 @@ html, body {
   align-items:center;
   padding:1.25rem;
   background: #3a83bee6; /* azul con opacidad */
-  color: white;
+  color: #ffffff;
   border-radius:8px;
   margin-top:1rem;
 }
@@ -94,12 +94,12 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
   padding:0.35rem 0.5rem;
   border-radius:6px;
   border:1px solid #0000000f;
-  background:#fff;
+  background:#ffffff;
   cursor:pointer;
 }
 .filters button.active{
   background: #3A83BE;
-  color:#fff;
+  color:#ffffff;
   border-color:transparent;
 }
 
@@ -107,7 +107,7 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
 .project{
   padding:0.75rem;
   border-radius:6px;
-  background:linear-gradient(180deg,#fff,#fbfbfb);
+  background:linear-gradient(180deg,#ffffff,#fbfbfb);
   border:1px solid #00000008;
   color:#222222;
 }
@@ -115,4 +115,4 @@ section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #
 .project a{font-size:0.9rem;color:#3A83BE}
 
 /* Footer */
-footer{font-size:.85rem;color:white;text-align:center;padding:.75rem 0;margin-bottom:1rem}
+footer{font-size:.85rem;color:#ffffff;text-align:center;padding:.75rem 0;margin-bottom:1rem}

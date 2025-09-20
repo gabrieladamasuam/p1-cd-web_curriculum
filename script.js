@@ -1,4 +1,3 @@
-// script.js - Interactividad mínima: tema + filtros + inicialización de barras
 document.addEventListener('DOMContentLoaded', function () {
   // Modo oscuro eliminado para simplificar el código
 
