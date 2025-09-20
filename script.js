@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Modo oscuro eliminado para simplificar el código
 
   // Filtros de proyectos (arreglado para manejar espacios y comparación robusta)
   document.querySelectorAll('.filters button').forEach(btn => {
@@ -24,5 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-
 });
