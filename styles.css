@@ -42,7 +42,11 @@ html, body {
 }
 .logo{flex:0 0 96px}
 .intro h1{margin:0 0 .25rem 0;font-size:2.0rem}
-.role{margin:0;font-size: 1.2rem; color: #c8c8c8;}
+.role{
+  margin: 0 0 1.2rem 0;
+  font-size: 1.2rem;
+  color: #c8c8c8;
+}
 
 /* Contact emails estilizados */
 .contact a {
@@ -58,17 +62,32 @@ html, body {
   text-decoration: underline;
 }
 
+.contact {
+  list-style: disc;
+  padding-left: 1.0rem;
+  margin: 0;
+}
 .contact li {
   margin-bottom: 0.5rem;
+}
+.contact li::marker {
+  font-size: 1.0em;
+  color: #F7DC4A;
+  content: '\25B6  ';
 }
 
 /* MAIN / SECTIONS */
 main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
 section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #0000000f}
-#skills .skills-list{
+#skills .skills-list {
   padding-left: 1.2rem;
-  margin:0;
-  list-style:disc;
+  margin: 0;
+  list-style: disc;
+}
+#skills .skills-list li::marker {
+  font-size: 1.2em;
+  color: #F7DC4A;
+  content: '\25B6  ';
 }
 
 #skills li{
