@@ -40,16 +40,16 @@ html, body {
   margin-top:1rem;
 }
 .logo{flex:0 0 96px}
-.intro h1{margin:0 0 .25rem 0;font-size:2.0rem}
+.intro h1{margin:0 0 .25rem 0;font-size:1.8rem}
 .role{
   margin: 0 0 1.2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #c8c8c8;
 }
 
 /* Contact emails estilizados */
 .contact a {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #df7f20;
   text-decoration: none;
   font-weight: 500;
