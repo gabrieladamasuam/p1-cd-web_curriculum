@@ -34,8 +34,7 @@ html, body {
   gap:1rem;
   align-items:center;
   padding:1.25rem;
-  background: #3a83bebb; /* azul con 85% opacidad */
-  backdrop-filter: blur(6px); /* efecto vidrio */
+  background: #3a83bee6; /* azul con 85% opacidad */
   color: white;
   border-radius:8px;
   margin-top:1rem;
