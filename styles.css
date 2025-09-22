@@ -44,7 +44,7 @@ html, body {
   color: #f0f0f0;
 }
 
-/* Contacto con triángulos */
+/* Contactos */
 .contact {
   list-style: none;
   padding-left: 0;
@@ -82,7 +82,7 @@ section {
   box-shadow: 0 2px 6px #00000010;
 }
 
-/* Listas con triángulos */
+/* Listas */
 .skills-list,
 .studies-list {
   list-style: none;
