@@ -103,7 +103,7 @@ section {
 /* Filtros de proyectos */
 button {
   font-family: inherit; /* hereda de body */
-  font-size: 16px;      /* mismo tamaño que el texto normal */
+  font-size: 16px;
 }
 
 .filters {
