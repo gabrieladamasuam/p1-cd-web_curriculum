@@ -1,118 +1,153 @@
 html, body {
-  height: 100%;
   margin: 0;
-  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #222222;
-  background-color: #3A83BE;
-  background-image: url('https://www.uam.es/uam/media/img/1606932565641/quieroseringeniera-05.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  font-family: "Times New Roman", Garamond, serif;
+  color: #222;
+  background-color: #f5f7fa;
 }
 
+/* Contenedor general */
 .block {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 16px;
 }
 
-/* Encabezados h2 */
+/* Títulos */
 .section-title {
-  background-color: #3A83BE;
-  color: white; 
-  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #3A83BE;
 }
 
-/* hero = header (cabecera)*/
-.hero{
-  display:flex;
-  gap:1rem;
-  align-items:center;
-  padding:1.25rem;
-  background: #3a83bee6; /* azul con opacidad */
-  color: #ffffff;
-  border-radius:8px;
-  margin-top:1rem;
-}
-.logo{flex:0 0 96px}
-.intro h1{margin:0 0 .25rem 0;font-size:1.8rem}
-.role{
-  margin: 0 0 1.2rem 0;
-  font-size: 1.0rem;
-  color: #c8c8c8;
+/* Header centrado */
+.hero {
+  display: flex;
+  flex-direction: column;   /* Logo arriba, texto debajo */
+  align-items: center;
+  text-align: center;
+  background: #3A83BE;
+  color: white;
+  border-radius: 8px;
+  margin: 16px auto;
+  padding: 24px 16px;
 }
 
-/* Contact emails */
-.contact a {
-  font-size: 1.0rem;
-  color: #df7f20;
-  text-decoration: none;
-  font-weight: 500;
+.intro h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+.role {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #f0f0f0;
 }
 
-.contact a:hover { /* Fuente: https://www.w3schools.com/css/css_pseudo_classes.asp */
-  color: #F7DC4A;
-  text-decoration: underline;
-}
-
+/* Contacto con triángulos */
 .contact {
-  list-style: disc;
-  padding-left: 1.0rem;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 .contact li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 6px;
 }
-.contact li::marker { /* Fuente: https://www.w3schools.com/css/css_pseudo_elements.asp*/
-  font-size: 1.0rem;
+.contact li::before {
+  content: "\25B6";  /* Triángulo amarillo */
   color: #F7DC4A;
-  content: '\25B6  ';
+  margin-right: 6px;
+}
+.contact a {
+  font-size: 16px;
+  color: #F7DC4A;
+  text-decoration: none;
+}
+.contact a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Secciones */
-main{margin:1rem 0 3rem 0;display:grid;grid-template-columns:1fr;gap:1rem}
-section{background:#ffffff;padding:1rem;border-radius:6px;box-shadow:0 1px 3px #0000000f}
-#skills .skills-list {
-  padding-left: 1.2rem;
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px #00000010;
+}
+
+/* Listas con triángulos */
+.skills-list,
+.studies-list {
+  list-style: none;
+  padding-left: 0;
   margin: 0;
-  list-style: disc;
 }
-#skills .skills-list li::marker {
-  font-size: 1.2rem;
+.skills-list li,
+.studies-list li {
+  margin-bottom: 6px;
+}
+.skills-list li::before,
+.studies-list li::before {
+  content: "\25B6";
   color: #F7DC4A;
-  content: '\25B6  ';
+  margin-right: 6px;
 }
 
-#skills li{
-  margin-bottom:0.4rem;
-  color: #222222;
+/* Filtros de proyectos */
+button {
+  font-family: inherit; /* hereda de body */
+  font-size: 16px;      /* mismo tamaño que el texto normal */
 }
 
-/* Projects */
-.filters{display:flex;gap:0.5rem;margin-bottom:0.75rem}
-.filters button{
-  padding:0.35rem 0.5rem;
-  border-radius:6px;
-  border:1px solid #0000000f;
-  background:#ffffff;
-  cursor:pointer;
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
 }
-.filters button.active{
+.filters button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #3A83BE;
+  background: #fff;
+  color: #3A83BE;
+  cursor: pointer;
+}
+.filters button.active,
+.filters button:hover {
   background: #3A83BE;
-  color:#ffffff;
-  border-color:transparent;
+  color: #fff;
 }
 
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.75rem}
-.project{
-  padding:0.75rem;
-  border-radius:6px;
-  background:linear-gradient(180deg,#ffffff,#fbfbfb);
-  border:1px solid #00000008;
-  color:#222222;
+/* Proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
 }
-.project h3{margin:0 0 .35rem 0}
-.project a{font-size:0.9rem;color:#3A83BE}
+.project {
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 4px #00000008;
+}
+.project h3 {
+  margin: 0 0 8px 0;
+}
+.project a {
+  font-size: 14px;
+  color: #3A83BE;
+}
 
 /* Footer */
-footer{font-size:.85rem;color:#ffffff;text-align:center;padding:.75rem 0;margin-bottom:1rem}
+footer {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  padding: 16px 0;
+}
