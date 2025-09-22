@@ -30,6 +30,8 @@ html, body {
   border-radius: 8px;
   margin: 16px auto;
   padding: 24px 16px;
+  max-width: 1000px;
+  box-sizing: border-box;
 }
 
 .intro h1 {
